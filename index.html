@@ -122,6 +122,7 @@
 	<script src="js/util.js"></script>
 	<script src="js/main.js"></script>
 	<script type="text/javascript">
+		// 禁用右键菜单,只允许在文本框内使用
 		document.oncontextmenu = function (t) {
 			window.event && (t = window.event);
 			try {
@@ -131,6 +132,7 @@
 				return !1
 			}
 		},
+			// 禁用粘贴功能,只允许在文本框内使用
 			document.onpaste = function (t) {
 				window.event && (t = window.event);
 				try {
@@ -140,6 +142,7 @@
 					return !1
 				}
 			},
+			// 禁用复制功能,只允许在文本框内使用
 			document.oncopy = function (t) {
 				window.event && (t = window.event);
 				try {
@@ -149,6 +152,7 @@
 					return !1
 				}
 			},
+			// 禁用剪切功能,只允许在文本框内使用
 			document.oncut = function (t) {
 				window.event && (t = window.event);
 				try {
@@ -158,6 +162,7 @@
 					return !1
 				}
 			},
+			// 禁用文本选择功能,只允许在文本框内使用
 			document.onselectstart = function (t) {
 				window.event && (t = window.event);
 				try {

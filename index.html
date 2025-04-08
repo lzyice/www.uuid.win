@@ -90,7 +90,7 @@
 				<br>
 	
 				<div id="result" role="dialog">
-					<p color class="h5 margin-top-sm text-black-hint" id="msg"></p>
+					<p class="h5 margin-top-sm text-black-hint" id="msg"></p>
 				</div>
 			</article>
 			<!--全部标签结束-->
@@ -113,16 +113,17 @@
 					style="display:inline-flex;text-decoration:none;height:25px;line-height:25px;">
 					本网站由<img src="images/upyun_logo6.png" style="width: 50px;" />提供CDN加速/云存储服务
 				</a> -->
-				<p class="copyright">© 2010-2024.</p>
+				<p class="copyright">© 2010-<script>document.write(new Date().getFullYear())</script>.</p>
 			</div>
 		</footer>
 	</div>
 	<div id="bg">
 	</div>
+	<!-- 将非关键脚本改为延迟加载 -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/skel.min.js" defer></script>
+	<script src="js/util.js" defer></script>
+	<script src="js/main.js" defer></script>
 	<script type="text/javascript">
 		// 禁用右键菜单,只允许在文本框内使用
 		document.oncontextmenu = function (t) {
